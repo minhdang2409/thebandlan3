@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>demo</title>
+        <meta charset="utf-8">
+        <style>
+            body {
+                display:flex;
+                align-items: center;
+                justify-content:center;
+                flex-direction:column;
+            }
+
+
+            .pc,
+            .table,
+            .mobile
+            {
+                display:none
+            }
+
+            /* BREAK POINT 
+
+            /* PC  */
+           @media (min-width:1024px) {
+
+              .pc {
+                display:block;
+              }
+
+           }
+
+            /* TABLE */
+           @media (max-width:1023px) and (min-width:740px) {
+            .table {
+                display:block;
+            }
+           }
+ 
+            /* MOBILE  */
+            @media (max-width:739px) {
+                .mobile {
+                    display: block;
+                }
+            }
+
+           
+             
+
+
+        </style>
+    </head>
+    <body>
+        <h2 class="pc">PC</h2>
+        <h2 class="table">TABLE</h2>
+        <h2 class="mobile">MOBILE</h2>
+    </body>
+</html>
